@@ -1,0 +1,87 @@
+body {
+
+  background: : #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 40%, rgba(148, 187, 233, 1) 100%);;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+form {
+  width: 600px;
+}
+fieldset {
+  border: 5px solid black;
+  border-radius: 20px;
+}
+legend {
+  font-family: fantasy;
+}
+input[type] {
+  border-radius: 30px;
+}
+input[type] {
+  border: 3px solid rgba(111, 10, 62, 0.855);
+}
+input[optional] {
+  border: 3px solid rgba(3, 94, 22, 0.855);
+}
+input:hover {
+  background-color: rgb(187, 207, 210);
+}
+input:focus {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+input[value="TAP ACADEMY"] {
+  background-color: rgb(76, 50, 203);
+  color: antiquewhite;
+  font-weight: 900;
+}
+input + p {
+  display: none;
+}
+
+input:hover + p {
+  display: inline;
+  font-weight: 100;
+}
+img{
+    display:none;
+}
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="number"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="number"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+select[name="Country"] {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+input[type="radio"]:checked {
+    height:20px;
+    width:20px;
+}
+input[type="radio"]:checked + label {
+font-size: 20;
+}
+textarea{
+    resize: none;
+}
