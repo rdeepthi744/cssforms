@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Course Regestration form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="FN">First Name</label>
+            </td>
+            <td>
+              <input type="text" placeholder="eg:Deepthi" name="fn" required />
+              <p>Enter your name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="SN">Sur Name</label></td>
+            <td>
+              <input type="text" placeholder="eg:R" name="sn" id="" optional />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Mn">Mobile Number</label></td>
+            <td>
+              <input type="tel" placeholder="eg:1234567890" />
+              <p>Enter your mobile no</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email"> Email</label></td>
+            <td>
+              <input type="email" placeholder="use atleast 8 characters" />
+              <p>use upper,lower,specialcase</p>
+              <img src="/checked.png" alt="" id="valid" />
+              <img src="/x-button.png" alt="" id="invalid" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input type="password" />
+              <p>Enter your password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cpass"> Confirm Password</label></td>
+            <td>
+              <input type="password" />
+              <p>Confirm your password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td>
+              <input type="date" placeholder="mm/dd/yyyy" />
+              <p>Enter your DOB</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">AGE</label></td>
+            <td>
+              <input type="number" name="AGE" required min="18" max="100" />
+              <p>Enter your age</p>
+              <img src="/checked.png" alt="" id="valid" />
+              <img src="/x-button.png" alt="" id="invalid" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" value="MALE" name="gender" /><label for=""
+                >Male</label
+              >
+              <input type="radio" value="FEMALE" name="gender" /><label for="">
+                Female</label
+              >
+              <input type="radio" value="OTHERS" name="gender" />
+              <label for="">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for=" country">Select Country</label></td>
+            <td>
+              <select name="Country" id="">
+                <option class="opt" value="Ind">INDIA</option>
+                <option class="opt" value="Usa">USA</option>
+                <option class="opt" value="china">CHINA</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="file">Upload Picture</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="select course">Select Course</label></td>
+          </tr>
+          <tr>
+            <td>
+              <select name="COURSE" id="">
+                <option value="PFWD">PYTHON FULL STCK WEB DEVELOPMENT</option>
+                <option value="JFWD">JAVA FULL STCK WEB DEVELOPMENT</option>
+                <option value="mERNSTACK">MERNSTACK</option>
+                <option value="DSA">DATA STRUCTURES AND ALGORITHMS</option>
+              </select>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="institite name">Institute Name </label>
+              <input
+                type="text"
+                id="institute"
+                name="institute"
+                value="TAP ACADEMY"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="delivery mode">Delivery Mode</label>
+
+              <input type="radio" name="mode" />ONLINE
+              <input type="radio" name="mode" />OFFLINE
+            </td>
+          </tr>
+        </table>
+
+        <label for="comments">Comments</label>
+        <br />
+
+        <textarea rows="5" cols="30" name="" id=""></textarea> <br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
